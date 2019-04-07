@@ -1,11 +1,12 @@
+from decimal import *
 import math
 again = "y"
 while again == "y":
     op = raw_input("What's the original price? ")
     sp = raw_input("What's the sale %? ")
 
-    spnum = float(sp)
-    opnum = float(op)
+    spnum = Decimal(sp)
+    opnum = Decimal(op)
     spnum2 = spnum / 100
 
     perc = 1 - spnum2
