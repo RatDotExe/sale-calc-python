@@ -10,9 +10,10 @@ while again == "y":
     spnum2 = spnum / 100
 
     perc = 1 - spnum2
-
     r = opnum * perc
-
-    print r
+    fn = str(round(r, 2))
+    
+    print fn
     print ("Would you like to do another calculation? ")
+    
     again = raw_input("y for yes or n for no: ")
